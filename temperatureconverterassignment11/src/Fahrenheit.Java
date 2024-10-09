@@ -4,24 +4,15 @@
 //Class - Computer science 30 
 //Lab  - Mr. Fox 
 
-public class Fahrenheit
-{
-	private double fahrenheit;
-
-	public void setFahrenheit(double fahren)
-	{
+public class Fahrenheit{
+	public double fahrencalculator(double celcius){
+	double fahrenheit = 9.0/5*celcius + 32;
+	return fahrenheit;
 	}
 
-	public double getCelsius()
-	{
-		double celsius = 0.0;
-		//add code to convert fahrenheit to celsius
-		return celsius;
-	}
+	public double celcalculator(double fahrenheit){
+	double celsuis = 5.0/9*(fahrenheit - 32);
+	return celsuis; 
 
-	public void print()
-	{
-		//this is part of the solution
-		System.out.println(getCelsius());
 	}
 }
