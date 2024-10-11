@@ -11,11 +11,11 @@ public class FahrenheitRunner
 
 		System.out.println("what is the temperature in celsius?");
 		double c = keyboard.nextDouble();	
-		asd.fahrencalculator(c);
+		System.out.println(asd.fahrencalculator(c));
 
 		System.out.println("what is the temperature in Fahrenheit?");
 		double f = keyboard.nextDouble();	
-		asd.celcalculator(f);
+		System.out.println(asd.celcalculator(f));
 		
 	}
 }
