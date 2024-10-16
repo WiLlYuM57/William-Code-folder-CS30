@@ -16,7 +16,16 @@ public class GeometryRunner {
         double rectwidth = keys.nextDouble();
         calc.perimeter(rectlength, rectwidth);
         }
-        
+        else if (choice == 2){
+            System.out.println("what is the side length of one face?");
+            double cubelength = keys.nextDouble();
+            calc.surfaceArea(cubelength);
+        }
+        else if (choice == 3){
+            System.out.println("What is the radius of the circle?");
+            double radius =keys.nextDouble();
+            calc.circleArea(radius);
+        }
         
 
 
