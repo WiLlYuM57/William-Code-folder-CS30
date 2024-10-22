@@ -1,13 +1,8 @@
-//(c) A+ Computer Science
-// www.apluscompsci.com
-
-//OOP example
 
 public class Triangle
 {
 	//instance variables
    private int sideA, sideB, sideC;
-
    public Triangle()
    {
       setSides(0,0,0);
@@ -15,7 +10,7 @@ public class Triangle
 
    public Triangle(int a, int b, int c)
    {
-      //add the needed code to this method
+      
 
    }
 
@@ -28,6 +23,6 @@ public class Triangle
 
    public void print()
    {
-   	System.out.println("sides " + sideA + " " + sideB + " " + sideC);
+   	System.out.println(sideA + sideB + sideC);
    }
 }
