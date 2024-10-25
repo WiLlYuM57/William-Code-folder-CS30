@@ -2,23 +2,17 @@
 public class Triangle
 {
 	//instance variables
-   private int sideA, sideB, sideC;
-   public Triangle()
+   private double sideA, sideB, sideC;
+   public Triangle(double a, double b, double c)
    {
-      setSides(0,0,0);
-   }
-
-   public Triangle(int a, int b, int c)
-   {
-      
-
-   }
-
-   public void setSides(int a, int b, int c)
-   {
-   	sideA=a;
+      sideA=a;
    	sideB=b;
    	sideC=c;
+
+   }
+   public double calcP(){
+      double perimeter = sideA+sideB+sideC ;
+      return perimeter;
    }
 
    public void print()
