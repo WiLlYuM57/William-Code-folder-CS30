@@ -7,7 +7,7 @@ public class CoolNumbers
 	 *	num % 3-6 all have a remainder of 1
 	 *it will return false otherwize
 	 */
-	public boolean isCoolNumber( int stop )
+	public static boolean isCoolNumber( int stop )
             {
                 if (stop % 3 == 1 && stop % 4 == 1 && stop % 5 == 1 &&  stop % 6 == 1){
                     return true;
@@ -16,11 +16,15 @@ public class CoolNumbers
                  
             }
             
-    public void kewlsd(int stop){
+    public static int kewlsd(int stop){
         int count = 0;
+
         for ( int i = 6; i < stop; i++){
-            isCoolNumber(i);
+            if(isCoolNumber(i)==true){
+                count++;
+            }
         }
-        count++;
+        return count;
     }
+    
 }

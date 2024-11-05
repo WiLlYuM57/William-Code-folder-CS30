@@ -9,9 +9,7 @@ public class App {
         CoolNumbers kewl = new CoolNumbers();
         System.out.println("pick a number you want to test up too.");
         int stop = koolnum.nextInt();
-        kewl.isCoolNumber(stop);
-        kewl.kewlsd(stop);
-		System.out.println( CoolNumbers.isCoolNumber(250) + " cool numbers between 6 - " + 250);
+		System.out.println( CoolNumbers.kewlsd(stop) + " cool numbers between 6 - " + stop);
 
     
     }
