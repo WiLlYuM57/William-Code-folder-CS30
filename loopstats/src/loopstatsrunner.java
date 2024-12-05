@@ -10,7 +10,7 @@ public class loopstatsrunner {
     
     public int OddCount(){
         int getoddcount = 0;
-        for (int i = 0; i <= stop; i++){
+        for (int i = start; i <= stop; i++){
             if (i % 2 != 0){
                 getoddcount++;
             }
@@ -20,7 +20,7 @@ public class loopstatsrunner {
 
     public int EvenCount(){
         int getevencount = 0;
-        for (int i = 0; i <= stop; i++){
+        for (int i = start; i <= stop; i++){
             if (i % 2 == 0){
                 getevencount++;
             }
@@ -32,7 +32,7 @@ public class loopstatsrunner {
     public int Total(){
        
         int gettotal = 0;
-        for (int i = 0; i <= stop; i++){
+        for (int i = start; i <= stop; i++){
             gettotal +=i;
         }
 
