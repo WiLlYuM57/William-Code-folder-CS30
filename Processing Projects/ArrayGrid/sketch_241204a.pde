@@ -11,6 +11,14 @@ void draw() {
 void mousePressed() {
 g.click(mouseX, mouseY);
 }
+void keyPressed() {
+if(key == 'c') {
+  g.clear();  
+  }
+  else if (key == '5') {
+  g.five();
+  }
+}
 
 class grid {
   int ROWS, COLS;
@@ -21,14 +29,10 @@ class grid {
      ROWS = tempr;
      COLS = tempc;
      gridarray = new boolean[ROWS][COLS];
-     for (int y = 0; y < ROWS; y++) {
-       for (int x = 0; x < COLS; x++) {
-     gridarray[y][x] = false;
-       }
-    }
+     clear();
   }
     void displayGrid(){
-      gridarray[4][3] = true; 
+     
     for (int y = 0; y< ROWS; y++){
       for (int x = 0; x< COLS; x++){
         if (gridarray[y][x] == false) {
@@ -57,6 +61,24 @@ class grid {
     gridarray[y][x] = false;
     }
   }
+  void clear() {
+  for (int y = 0; y < ROWS; y++) {
+       for (int x = 0; x < COLS; x++) {
+     gridarray[y][x] = false;
+       }
+    }
+  }
+  void five() {
+  for (int y = 0; y < ROWS; y++) {
+   for (int x = 0; x < COLS; x++) {
+    if (y == 5 || x == 5) {
+     gridarray[y][x] = true;  
+    }
+   }
+  }
+  
+  }
+  
 }
   
 

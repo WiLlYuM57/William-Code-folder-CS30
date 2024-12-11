@@ -52,9 +52,16 @@ public static int getCount(int[] numArray, int val){
 
 //Remove val will replace the instance of particular numbers.
 //Returns an entire array
-public static int[] removeVal(int[] numArray, int val)
-{
-    return null;
-}
+// public static int[] removeVal(int[] numArray, int val)
+// {
+//     int counter = 0;
+//     for(int i = counter;  i <= numArray.length; i++){
+//         if( val = int[i] ){
+
+//         }
+
+//     }
+//     return null;
+// }
 
 }
